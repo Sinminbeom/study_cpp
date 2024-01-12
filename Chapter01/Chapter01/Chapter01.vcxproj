@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CopyConstructor.cpp" />
+    <ClCompile Include="DerivedClass.cpp" />
     <ClCompile Include="ThisAndConst.cpp" />
     <ClCompile Include="exam01.cpp" />
     <ClCompile Include="exam02.cpp" />

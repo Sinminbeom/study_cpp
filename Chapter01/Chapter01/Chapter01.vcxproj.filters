@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\OOPAndPt2">
       <UniqueIdentifier>{36a40527-1f43-4378-85b3-e00b58587acc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Inheritance">
+      <UniqueIdentifier>{21ca1bae-0052-43de-b233-2ca499c87c36}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CopyConstructor.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="exam02.cpp">
       <Filter>소스 파일\PointAndReference</Filter>
+    </ClCompile>
+    <ClCompile Include="DerivedClass.cpp">
+      <Filter>소스 파일\Inheritance</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
