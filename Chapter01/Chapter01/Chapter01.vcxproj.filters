@@ -22,6 +22,12 @@
     <Filter Include="소스 파일\Inheritance">
       <UniqueIdentifier>{21ca1bae-0052-43de-b233-2ca499c87c36}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Polymorphism">
+      <UniqueIdentifier>{854188f5-48ba-495d-bf65-4f2bf881c499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\OperatorOverloading">
+      <UniqueIdentifier>{07335596-86f4-4b20-a14d-d9ceec2de132}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CopyConstructor.cpp">
@@ -50,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="DerivedClass.cpp">
       <Filter>소스 파일\Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyConstructor2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicBindingAndVirtual.cpp">
+      <Filter>소스 파일\Polymorphism</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment.cpp">
+      <Filter>소스 파일\OperatorOverloading</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

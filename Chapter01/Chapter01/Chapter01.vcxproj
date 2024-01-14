@@ -127,8 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Assignment.cpp" />
     <ClCompile Include="CopyConstructor.cpp" />
+    <ClCompile Include="CopyConstructor2.cpp" />
     <ClCompile Include="DerivedClass.cpp" />
+    <ClCompile Include="DynamicBindingAndVirtual.cpp" />
     <ClCompile Include="ThisAndConst.cpp" />
     <ClCompile Include="exam01.cpp" />
     <ClCompile Include="exam02.cpp" />
