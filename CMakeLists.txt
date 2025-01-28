@@ -21,7 +21,7 @@ set(SRC_FILES
 include_directories(${SRC_DIR})
 
 # Main 실행 파일
-add_executable(${PROJECT_NAME} test.cpp ${SRC_FILES})
+add_executable(${PROJECT_NAME} main.cpp ${SRC_FILES})
 
 # Google Test 설정
 find_package(GTest REQUIRED)
