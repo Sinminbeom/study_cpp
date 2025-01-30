@@ -54,5 +54,25 @@ TEST(TaskQueueTest, EmptyQueueBehavior) {
     // 비어있는 Queue에서 Task 실행 시도
     EXPECT_NO_THROW(queue.ExecuteNextTask());
     EXPECT_NO_THROW(queue.ExecuteAll());
+
+    TaskQueue queue;
+
+    // Add tasks to the queue
+    queue.AddTask([]() { std::cout << "Task 1 executed.\n"; });
+    queue.AddTask([]() { std::cout << "Task 2 executed.\n"; });
+    queue.AddTask([]() { std::cout << "Task 3 executed.\n"; });
+
+    // Execute tasks
+    std::cout << "Executing tasks one by one:\n";
+    while (!queue.IsEmpty()) {
+        queue.ExecuteNextTask();
+    }
+
+    // Re-add tasks
+    queue.AddTask([]() { std::cout << "New Task 1 executed.\n"; });
+    queue.AddTask([]() { std::cout << "New Task 2 executed.\n"; });
+
+    std::cout << "\nExecuting all tasks at once:\n";
+    queue.ExecuteAll();
 }
 */

@@ -103,12 +103,10 @@ int main() {
     knight1.hp_ = 100;
     knight1.level_ = 10;
 
-    // std::cout << "================ 복사 생성자 =======================" << std::endl;
+    std::cout << "================ 복사 생성자 =======================" << std::endl;
 
-    // // 복사 생성자
-    // Knight knight2 = knight1;
-
-    // std::cout << knight2.level_ << std::endl;
+    // 복사 생성자
+    Knight knight2 = knight1;
 
     std::cout << "================ 복사 대입 연산자 =======================" << std::endl;
 
@@ -116,6 +114,5 @@ int main() {
     Knight knight3;
     knight3 = knight1;
 
-    std::cout << knight3.level_ << std::endl;
     return 0;
 }
