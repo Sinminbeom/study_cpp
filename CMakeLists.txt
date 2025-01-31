@@ -15,6 +15,16 @@ set(TEST_DIR ${CMAKE_SOURCE_DIR}/test)
 set(SRC_FILES
     ${SRC_DIR}/core/task_queue/task_queue.cpp
     ${SRC_DIR}/core/calculator/calculator.h
+    ${SRC_DIR}/game/game.h
+    ${SRC_DIR}/game/game.cpp
+    ${SRC_DIR}/game/field.h
+    ${SRC_DIR}/game/field.cpp
+    ${SRC_DIR}/creature/player.h
+    ${SRC_DIR}/creature/player.cpp
+    ${SRC_DIR}/creature/creature.h
+    ${SRC_DIR}/creature/creature.cpp
+    ${SRC_DIR}/creature/monster.h
+    ${SRC_DIR}/creature/monster.cpp
 )
 
 # Include 디렉터리
