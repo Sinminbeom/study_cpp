@@ -1,6 +1,7 @@
 #pragma once
 
 #include "creature/creature.h"
+#include "game/game.h"
 
 enum PlayerType {
     PT_Knight = 1,
@@ -8,12 +9,14 @@ enum PlayerType {
     PT_Mage = 3
 };
 
-class Player: Creature {
+class Player: public Creature {
  public:
     Player(int player_type): Creature(CT_Player), player_type_(player_type) {
 
     }
     virtual ~Player() {}
+
+    virtual void PrintInfo();
  protected:
     int player_type_;
 };

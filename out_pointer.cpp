@@ -1,3 +1,6 @@
+#include "core/task_queue/task_queue.h"
+#include <string>
+#include <memory>
 #include <iostream>
 
 #pragma region IN_OUT_DEFINITIONS
@@ -32,6 +35,8 @@ void ProcessUser(const std::shared_ptr<UserDTO>& user) {
 
 #pragma endregion
 
+
+
 /*
 int main() {
     int input = 5;
@@ -42,6 +47,14 @@ int main() {
 
     Update(&result);
     std::cout << "Updated result: " << result << std::endl;
+
+    //============================================================
+
+    std::shared_ptr<UserDTO> user = std::make_shared<UserDTO>("mbshin", 30);
+
+    ProcessUser(user);
+
+    std::cout << "Name: " << user->name_ << ", Age: " << user->age_ << std::endl;    
 
     return 0;
 }

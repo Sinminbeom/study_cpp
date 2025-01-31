@@ -1,23 +1,17 @@
-#include "core/task_queue/task_queue.h"
 #include <iostream>
-#include <string>
-#include <memory>
+#include "game/game.h"
 
 int main() {
 
-    int* nums = new int[5];
+    srand((unsigned int)time(nullptr));
+
+    Game game;
+    game.Init();
+
+    while(true) {
+        game.Update();
+    }
 
     return 0;
-
-    /*
-    std::shared_ptr<UserDTO> user = std::make_shared<UserDTO>("mbshin", 30);
-
-    ProcessUser(user);
-
-    std::cout << "Name: " << user->name_ << ", Age: " << user->age_ << std::endl;    
-
-    */
-
-
 
 }
